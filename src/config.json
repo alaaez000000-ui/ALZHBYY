@@ -1,0 +1,51 @@
+{
+  "donations": [
+    {
+      "name": "PayPal",
+      "value": "paypal.me/yourid",
+      "type": "link",
+      "icon": "CreditCard",
+      "color": "#003087"
+    },
+    {
+      "name": "InstaPay",
+      "value": "alaaezz010@instapay",
+      "type": "copy",
+      "icon": "Smartphone",
+      "color": "#ef4444"
+    },
+    {
+      "name": "IBAN",
+      "value": "EG650005301900000319135065001",
+      "type": "copy",
+      "icon": "Building2",
+      "color": "#059669"
+    }
+  ],
+  "socials": [
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@Ma3lomaWorld",
+      "icon": "Youtube",
+      "color": "#FF0000"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/alaaezz13?locale=ar_AR",
+      "icon": "Facebook",
+      "color": "#1877F2"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/ezzstoore/?hl=ar",
+      "icon": "Instagram",
+      "color": "#E4405F"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://www.tiktok.com/@alaa.ezz04",
+      "icon": "Music2",
+      "color": "#000000"
+    }
+  ]
+}

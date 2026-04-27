@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('/fonts/Amiri-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-arabic: "Cairo", serif;
+  --font-quran: "Amiri", serif;
+  
+  --color-background: oklch(0.145 0 0);
+  --color-foreground: oklch(0.985 0 0);
+  --color-card: oklch(0.205 0 0 / 0.5);
+  --color-card-foreground: oklch(0.985 0 0);
+  --color-popover: oklch(0.205 0 0);
+  --color-popover-foreground: oklch(0.985 0 0);
+  --color-primary: oklch(0.75 0.12 60); /* Gold */
+  --color-primary-foreground: oklch(0.145 0 0);
+  --color-secondary: oklch(0.4 0.08 160); /* Green */
+  --color-secondary-foreground: oklch(0.985 0 0);
+  --color-muted: oklch(0.269 0 0 / 0.5);
+  --color-muted-foreground: oklch(0.708 0 0);
+  --color-accent: oklch(0.75 0.12 60 / 0.15);
+  --color-accent-foreground: oklch(0.75 0.12 60);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: oklch(1 0 0 / 0.1);
+  --color-input: oklch(1 0 0 / 0.1);
+  --ring: oklch(0.75 0.12 60);
+  --radius: 1rem;
+
+  --color-immersive-bg: #05080a;
+  --color-immersive-gold: #c5a059;
+  --color-immersive-green: #2d5a4c;
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+.font-quran {
+  font-family: var(--font-quran);
+}
+
+@layer base {
+  body {
+    background: radial-gradient(circle at 50% 0%, #1a2a24 0%, #05080a 70%);
+    background-color: var(--color-immersive-bg);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--color-foreground);
+    @apply font-sans;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+}
+
+.glass-panel {
+  background: var(--color-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+}
+
+.gold-glow {
+  text-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.2);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.4);
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
